@@ -10,7 +10,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--results_dir', '-results_dir', help='name of training experiment folder', default='dean_cond_batch16', type=str)
 parser.add_argument('--outputs', '-outputs', help='how many sequences to print', default=500, type=int)
-parser.add_argument('--labels_size', '-labels_size', help='size of labels vector', default=60, type=int)
+parser.add_argument('--labels_size', '-labels_size', help='size of labels vector', default=0, type=int)
 parser.add_argument('--beauty_levels', '-beauty_levels', help='number of possible beauty levels', default=5, type=int)
 parser.add_argument('--total_agreement', dest='total_agreement', help='all voters agreed on same beauty level',action='store_true')
 parser.add_argument('--classification', dest='classification', help='if asked, use classification conditioning instead of original', action='store_true')
